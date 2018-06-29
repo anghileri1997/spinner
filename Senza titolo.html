@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <style>
+  @keyframes spin{
+from{ width:0px; height:0px; }
+to{width:50px; height:50px;}
+}
+@keyframes cspin{
+from{ width:50px; height:50px; }
+to{width:0px; height:0px;}
+}
+
+   #spinner {
+     opacity:0.5;
+    animation: spin 1s infinite alternate;
+    position: absolute;
+   top:50%;
+   left:50%;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+  #cspinner {
+   animation: cspin 1s infinite alternate;
+   position: absolute;
+  top:50%;
+  left:50%;
+   background-color: red;
+   width: 50px;
+   height: 50px;
+   border-radius: 100%;
+ }
+  </style>
+</head>
+<body>
+<div id="spinner"></div>
+<div id="cspinner"></div>
+</body>
+</html>
